@@ -1,6 +1,6 @@
 # MVC---DoubleOutput---Encapsuled
 ---
-an implementation of MVC--Encapsuled pour optimiser les sorties selon le naviguateur utilisé
+an implementation of MVC--Encapsuled pour optimiser les sorties selon le naviguwateur utilisé !:
 
 This Model-View-Controller in PHP is based on a developement initated in 2012 with IP-Formation Lyon
 I have added some feature in the page controller:
