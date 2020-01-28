@@ -1,0 +1,46 @@
+    <center>
+    <h2><?php echo $title?></h2>
+    <h1>Not found <span>:(</span></h1>
+    </center>
+    <p>Désolé, mais la page que vous recherchez ne semble pas exister.</p>
+    <p>Il semblerait que ce soit:</p>
+    <ul>
+      <li>un identifiant d'URL mal tapé <br />
+      		<i>( entendez par là qu'il faudrais revoir l'adresse que vous avez pianoté dasn la barre de votre butineur )</i>
+      </li>
+      <li>un lien dont la source n'existe plus <br />
+      		<i>( entendez par là que vous pouvez m'envoyer un <a href='<?php echo Url::link_rewrite_slashParam('contact'); ?>'>courriel</a> afin de me le notifier ), dites vous aussi que je reponds aux courriels au moins la première fois et que j'essaye de ne pas laissez une question sans réponse ( on ne peut pas tout savoir sur tout, c'est tout! )</i>
+      </li>
+      <li>une page que j'aurais dû déjà créer <br />
+      		<i>( entendez par là : &laquo; La Patience est <u>une</u> mère de sureté&laquo; )</i>
+      	</li>
+    </ul>
+    <center>
+	   <form action="<?php echo Url::link_rewrite_slashParam('Gougou-search-results'); ?>" id="cse-search-box">
+	   
+		  <div>
+		    <input type="hidden" name="cx" value="partner-pub-3240142213869705:7035975563" />
+		    <input type="hidden" name="cof" value="FORID:10" />
+		    <input type="hidden" name="ie" value="UTF-8" />
+		    <input type="text" name="q" size="55" />
+		    <input type="submit" name="sa" value="Rechercher sur ce site et d'autres" />
+		  </div>
+	
+	   </form>
+	</center>
+<script type="text/javascript" src="http://www.google.fr/coop/cse/brand?form=cse-search-box&amp;lang=fr"></script>
+
+<p>Voici quand même les quelques pages qui sont valables d'être cherchées</p>
+<ul>
+<li><a href='/NORMES-unicode'>La norme unicode</a></li>
+<li><a href='/NORMES-iso_8859_15'>La norme iso-8859-15</a></li>
+<li><a href='/NORMES-iso_8859_1'>La norme iso-8859-1</a></li>
+<li><a href='/NORMES-ascii'>La norme ASCII</a></li>
+<li><a href='/JS-keyCodes'>Les codes de caractères clavier reçu par JAVASCRIPT</a></li>
+<li><a href='/CSS-webcolors'>Les Couleurs Web HTML et CSS</a></li>
+<li><a href='/CSS-webfonts'>Quelques correspondances de Polices de Caractères</a></li>
+<li><a href='/CSS-cursors'>La liste des curseurs de souris</a></li>
+<li><a href='/HTML-fontStyle'>Les balise de style prééditées en HTML</a></li>
+<li><a href='/HTML-specialsChar'>LA liste des caractères spéciaux en HTML</a></li>
+<li><a href='/PHP-url_path_evolved/date/2016/version/1.00/doc-root?page=version2/path-folder?page=1/itx/x/recursive/no/simple--%3Eedit'>Un exemple de variables que l'on peut passer dans l'url</a></li>
+</ul>

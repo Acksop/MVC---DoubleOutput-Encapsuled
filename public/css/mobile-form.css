@@ -1,0 +1,11 @@
+<?php header('Content-type: text/css');?>
+@CHARSET "UTF-8";
+
+form .input{
+	margin-left: 0px;
+}
+label {
+	float: none !important;
+	width: auto;
+	text-align:right;
+}

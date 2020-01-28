@@ -1,0 +1,7 @@
+AddType application/x-httpd-php .php .php3 .php4 .htm .html .phtml .css
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [L]

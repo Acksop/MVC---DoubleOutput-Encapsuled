@@ -1,0 +1,62 @@
+    <h2><?php echo $title?></h2>
+
+    <script type="text/javascript" src="js/validationCourrier.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-1.7.1.js"></script>
+    
+    <span style='display:inline-block; float:right; position:relative; right:35px;top:15px'>
+    <img alt='timbre-de-courrier-electronique' src='images/Nouveau-timbre-Marianne-2013.jpg' width='45'/>
+    </span>
+    
+    <div class="well" style="padding: 10px 10px;">
+    <br /><br />
+    <form id="contactform" method="post" action="<?php echo Url::controlLink_rewrite('traitementEnvoiCourriel');?>" onSubmit="return validationContact()"> 
+
+		<div class="clearfix">
+      <label id='name_label' for="name">Coordonnées</label>
+      <div class="input">
+        <?php
+					if(isset($page['slashParams']['name'])){
+						echo "<input class='span8' type='text' id=name name=name placeholder='Nom Prénom' required tabindex='1' value='".Encoding::myUrlDecode($page['slashParams']['email'])."' />";
+					}else{
+						echo "<input class='span8' type='text' id=name name=name placeholder='Nom Prénom' required tabindex='1' />";
+					}
+				?>
+      </div>
+    </div>    			
+		<div class="clearfix">
+      <label id='email_label' for="email">Adresse électronique de réponse</label>
+      <div class="input">
+        <?php
+				if(isset($page['slashParams']['email'])){
+					echo '<input class="span8" type="text" id=email name=email placeholder="exemple@domaine.tld" required tabindex="2" value="'.Encoding::myUrlDecode($page['slashParams']['email']).'" />';
+				}else{
+					echo '<input class="span8" type="text" id=email name=email placeholder="exemple@domaine.tld" required tabindex="2" /> ';
+				}
+				?>
+      </div>
+    </div>    
+    <div class="clearfix">
+      <label id='message_label' for="message">Votre message à mon intention:</label>
+      <div class="input">
+		    <textarea class='span8' name=message id=message tabindex="4" cols="80" rows="5" required><?php if(isset($page['slashParams']['message'])){echo Encoding::myUrlDecode($page['slashParams']['message']);}?></textarea>
+      </div>
+    </div>
+		
+		<div class="clearfix" style="padding: 14px 200px;">
+    	<input class="btn primary" name="submit" type="submit" id="submit" tabindex="5" value="Me contacter"  /> 
+    </div>
+    </form>
+    
+    <br /><br />
+    		
+		<div id='contactform_success'></div>
+		<?php
+		if(isset($page['slashParams']['envoiDuMessage'])){
+			if($page['slashParams']['envoiDuMessage'] == 'oui'){
+				echo "<p>Votre message as &eacute;t&eacute; correctement transmis. Vous receverez une r&eacute;ponse dans les prochains jours.</p>";
+			}else{
+				echo "<p>Votre Message n'as pas &eacute;t&eacute; transmis. Veuillez v&eacute;rifiez les informations que vous avez saisies ...</p>";
+			}
+		}
+		?>
+	</div>

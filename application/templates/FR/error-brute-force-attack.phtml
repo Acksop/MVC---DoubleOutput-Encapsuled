@@ -1,0 +1,28 @@
+    <h2><?php echo $title?></h2>
+    <h1>What You will is Not found <span>:(</span></h1>
+    <p>Désolé, mais ce que vous venez de faire ne semble pas exister.</p>
+    <p>Il semblerait que ce soit:</p>
+    <ul>
+      <li>un acte malveillant <br />
+      		<i>( entendez par là qu'il faudrais revoir la mentalité avec laquelle vous abordez l'immensité de la toile Internet )</i>
+      </li>
+      <li>un test de sécurité <br />
+      		<i>( entendez par là que vous pouvez m'envoyer un <a href='<?php echo Url::link_rewrite_slashParam('contact'); ?>'>courriel</a> afin de me le notifier ), dites vous aussi que je reponds aux courriels au moins la première fois et que j'essaye de ne pas laissez une question sans réponse ( on ne peut pas tout savoir sur tout, c'est tout! )</i>
+      </li>
+      <li>une succession d'erreur de mot de passe <br />
+      		<i>( entendez par là : &laquo; La Mémoire est <u>la</u> grande des connaissances actuelles&laquo; )</i>
+      	</li>
+    </ul>
+   <form action="<?php echo Url::link_rewrite_slashParam('Gougou-search-results'); ?>" id="cse-search-box">
+   
+	  <div>
+	    <input type="hidden" name="cx" value="partner-pub-3240142213869705:7035975563" />
+	    <input type="hidden" name="cof" value="FORID:10" />
+	    <input type="hidden" name="ie" value="UTF-8" />
+	    <input type="text" name="q" size="96" />
+	    <input type="submit" name="sa" value="Rechercher sur ce site et d'autres" />
+	  </div>
+
+   </form>
+
+<script type="text/javascript" src="http://www.google.fr/coop/cse/brand?form=cse-search-box&amp;lang=fr"></script>
