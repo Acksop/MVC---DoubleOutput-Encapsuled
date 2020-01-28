@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<buildpath>
-	<buildpathentry kind="src" path="application/classes"/>
-	<buildpathentry kind="src" path="application/includes"/>
-	<buildpathentry kind="src" path="application/pages"/>
-	<buildpathentry kind="src" path="application/templates"/>
-	<buildpathentry kind="src" path="public"/>
-	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
-</buildpath>
