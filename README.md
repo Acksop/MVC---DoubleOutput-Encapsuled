@@ -17,4 +17,4 @@ I have added some feature in the page controller:
     Encoding by $encodage
 - the title of the html page can be modified by the PHP variable $title
 	
-I have added a new feature, it is about translation into differents language from type of language of the browser.
+I have also added a new feature, it is about translation into differents language from caractéristixxxs of language who it comes from the browser.
