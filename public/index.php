@@ -34,8 +34,6 @@
 
 //ini_set('display_errors',1);
 //error_reporting( E_ALL );
-$crawltsite=9;
-require_once "scriptPHP/crawltrack3-3-4/crawltrack.php";
 
 // Appel de la classe encoding permettant de forcer l'utf8 si besoin
 require_once CLASS_PATH . DIRECTORY_SEPARATOR . 'encoding.class.php';
@@ -46,10 +44,10 @@ require_once CLASS_PATH . DIRECTORY_SEPARATOR . 'device.class.php';
  // Appel du routage d'url en PHP
 require_once CLASS_PATH . DIRECTORY_SEPARATOR . 'url.class.php';
 $page = Url::url_rewrite();
+
+
  // Appel du coeur de l'application
 require_once CLASS_PATH . DIRECTORY_SEPARATOR . 'application.class.php';
 Application::load_page($page);
-
-//Application::load_layout($content);
 
 

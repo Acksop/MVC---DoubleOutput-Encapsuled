@@ -61,7 +61,6 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="/css/bootstrap.css" />
   <link rel="stylesheet" href="/css/docs.css" />
-  <link href="/js/assets/prettify.css" rel="stylesheet"> 
   <?php 
   if(isset($stylesCSS)){
   	foreach($stylesCSS as $value){
@@ -80,18 +79,6 @@
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
   <script src="/js/libs/modernizr-2.5.3.min.js"></script>
   
-  
-    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
-    <script src="/js/assets/prettify.js"></script>
-    <script>$(function () { prettyPrint() })</script>
-    <script src="/js/bootstrap-modal.js"></script>
-    <script src="/js/bootstrap-alerts.js"></script>
-    <script src="/js/bootstrap-twipsy.js"></script>
-    <script src="/js/bootstrap-popover.js"></script>
-    <script src="/js/bootstrap-dropdown.js"></script>
-    <script src="/js/bootstrap-scrollspy.js"></script>
-    <script src="/js/bootstrap-tabs.js"></script>
-    <script src="/js/bootstrap-buttons.js"></script>
   
   <?php
   
